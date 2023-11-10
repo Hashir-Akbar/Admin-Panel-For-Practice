@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.4",
+    "perfect-scrollbar": "^1.5.5",
     "sass": "^1.69.5"
   }
 }
