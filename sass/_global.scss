@@ -1,0 +1,15 @@
+.main {
+	display: grid;
+	grid-template-areas: "aside  body-content ";
+	grid-template-columns: 18vw 80vw;
+}
+body {
+	background-color: #f8f7fa;
+}
+.side-menu {
+	grid-area: aside;
+	background-color: white;
+}
+.body-content {
+	grid-area: body-content;
+}
