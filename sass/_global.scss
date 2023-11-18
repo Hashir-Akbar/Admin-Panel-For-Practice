@@ -5,6 +5,7 @@
 }
 body {
 	background-color: #f8f7fa;
+	color: #5d596c;
 }
 .side-menu {
 	grid-area: aside;
@@ -12,4 +13,7 @@ body {
 }
 .body-content {
 	grid-area: body-content;
+}
+.display-none {
+	display: none !important;
 }

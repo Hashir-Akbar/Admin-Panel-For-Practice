@@ -53,6 +53,26 @@
 		width: 35px;
 	}
 }
+.dashboard {
+	cursor: pointer;
+	.inner-list {
+		display: grid;
+		row-gap: 1em;
+		div {
+			padding-left: 2em;
+			display: flex;
+			gap: 1em;
+
+			align-items: center;
+			.circle {
+				width: 8px;
+				height: 8px;
+				border: 1.5px solid #858190;
+				border-radius: 50px;
+			}
+		}
+	}
+}
 .side-menu-content {
 	&-items {
 		// padding: 0.6em 1.2em 0.5em 1.5em;
@@ -101,4 +121,7 @@
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
 	width: 4px;
+}
+.icon-rotate {
+	rotate: 90deg;
 }

@@ -5,12 +5,30 @@ import PerfectScrollbar from "perfect-scrollbar";
 
 let sideMenu = document.querySelector(".side-menu");
 
-// sideMenu.addEventListener("mouseout", () => {
-// 	sideMenu.classList.remove("scrollbar");
-// });
-// sideMenu.addEventListener("mouseover", () => {
-// 	sideMenu.classList.add("scrollbar");
-// });
 
-// or just with selector string
 const ps = new PerfectScrollbar(".side-menu");
+
+let dashboard = document.querySelector(".dashboard")
+let innerList = document.querySelector(".inner-list")
+let dashboardIcon = document.querySelector(".dashboard-icon")
+console.log(dashboard);
+
+dashboard.addEventListener("click", () => {
+   // innerList.classList.remove("display-none")
+   if (innerList.classList.contains("display-none") === false) {
+      innerList.classList.add("display-none")
+
+
+   } else {
+      innerList.classList.remove("display-none")
+   }
+   if (dashboardIcon.classList.contains("icon-rotate") === false) {
+      dashboardIcon.classList.add("icon-rotate")
+
+   }
+   else {
+      dashboardIcon.classList.remove("icon-rotate")
+
+   }
+
+})
