@@ -42,6 +42,23 @@
 
 		top: 20px;
 
+		.search-box-tooltip {
+			position: relative;
+		}
+		.tooltip {
+			position: absolute;
+			top: 100%;
+			right: 100%;
+			min-width: 130px;
+			background: white;
+			display: flex;
+			flex-direction: column;
+			padding: 1.3em;
+			border-radius: 6px;
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+			gap: 1em;
+			justify-content: center;
+		}
 		box-icon {
 			width: 30px;
 			height: 100%;

@@ -25,8 +25,8 @@
 				</div>
 				<div class="side-menu-content">
 					<div class="side-menu-content-items">
-						<div class="dashboard">
-							<div class="side-menu-content-item">
+						<div class="js-list-menu">
+							<div class="side-menu-content-item dashboard">
 								<div class="left">
 									<box-icon name="envelope-open" color="#858190"></box-icon>
 									<span>Dashboard</span>
@@ -40,7 +40,7 @@
 										size="cssSize"></box-icon>
 								</div>
 							</div>
-							<div class="inner-list display-none">
+							<div class="inner-list inner-list-dashboard">
 								<div>
 									<span class="circle"></span>
 									<span>Analytics</span>
@@ -63,30 +63,80 @@
 								</div>
 							</div>
 						</div>
-						<div class="side-menu-content-item">
-							<div class="left">
-								<box-icon name="layout" color="#858190"></box-icon>
-								<span>Layouts</span>
+						<div class="js-list-menu">
+							<div class="side-menu-content-item layouts">
+								<div class="left">
+									<box-icon name="layout" color="#858190"></box-icon>
+									<span>Layouts</span>
+								</div>
+								<div class="right">
+									<!-- <span></span> -->
+									<box-icon
+										class="layouts-icon icon"
+										name="chevron-right"
+										color="#858190"
+										size="cssSize"></box-icon>
+								</div>
 							</div>
-							<div class="right">
-								<!-- <span></span> -->
-								<box-icon
-									name="chevron-right"
-									color="#858190"
-									size="cssSize"></box-icon>
+							<div class="inner-list-layout inner-list">
+								<div>
+									<span class="circle"></span>
+									<span>Analytics</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>CRM</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>eCommerce</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>Logistics</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>Academy</span>
+								</div>
 							</div>
 						</div>
-						<div class="side-menu-content-item">
-							<div class="left">
-								<box-icon name="copy" color="#858190"></box-icon>
-								<span>Front Pages</span>
+						<div class="js-list-menu">
+							<div class="side-menu-content-item frontPages">
+								<div class="left">
+									<box-icon name="copy" color="#858190"></box-icon>
+									<span>Front Pages</span>
+								</div>
+								<div class="right">
+									<!-- <span></span> -->
+									<box-icon
+										class="frontPages-icon"
+										name="chevron-right"
+										color="#858190"
+										size="cssSize"></box-icon>
+								</div>
 							</div>
-							<div class="right">
-								<!-- <span></span> -->
-								<box-icon
-									name="chevron-right"
-									color="#858190"
-									size="cssSize"></box-icon>
+							<div class="inner-list-frontPages inner-list">
+								<div>
+									<span class="circle"></span>
+									<span>Analytics</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>CRM</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>eCommerce</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>Logistics</span>
+								</div>
+								<div>
+									<span class="circle"></span>
+									<span>Academy</span>
+								</div>
 							</div>
 						</div>
 						<div class="side-menu-content-item">Apps and Pages</div>
@@ -230,7 +280,20 @@
 						<button>Search (ctrl+/)</button>
 					</div>
 					<div class="right">
-						<box-icon name="sun" color="#817d8d"></box-icon>
+						<div class="search-box-tooltip theme-change">
+							<box-icon name="sun" color="#817d8d"></box-icon>
+							<div class="tooltip theme-change-tooltip">
+								<div>
+									<span>Light</span>
+								</div>
+								<div>
+									<span>Dark</span>
+								</div>
+								<div>
+									<span>System</span>
+								</div>
+							</div>
+						</div>
 						<box-icon name="customize" color="#817d8d"></box-icon>
 						<box-icon name="bell" color="#817d8d"></box-icon>
 
@@ -1368,7 +1431,7 @@
 				</div>
 			</div>
 		</main>
-
+		<script src="jquery-3.7.1.min.js"></script>
 		<script type="module" src="main.js"></script>
 	</body>
 </html>
