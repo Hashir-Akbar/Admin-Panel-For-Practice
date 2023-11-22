@@ -33,17 +33,17 @@ $(document).ready(() => {
    menuToggler(".frontPages", ".inner-list-frontPages", ".frontPages-icon")
 
    function windowClick(clickItem, item) {
-     
-      $(document).on("click", function(event){
+
+      $(document).on("click", function (event) {
          let $a = $(item);
          let $b = $(clickItem);
 
-         if($a !== event.target && !$a.has(event.target).length && $b !== event.target && !$b.has(event.target).length){
-             $a.hide();
-         }           
+         if ($a !== event.target && !$a.has(event.target).length && $b !== event.target && !$b.has(event.target).length) {
+            $a.hide();
+         }
       })
    }
- 
+
 
    function tooltip(clickItem, displayOne) {
       $(displayOne).hide();
@@ -51,11 +51,14 @@ $(document).ready(() => {
          $(displayOne).toggle()
 
       })
-      windowClick(clickItem,displayOne)
+      windowClick(clickItem, displayOne)
 
 
    }
    tooltip(".theme-change", ".theme-change-tooltip")
+   tooltip(".customize", ".customize-change-tooltip")
+
+
 
 
 })

@@ -47,8 +47,8 @@
 		}
 		.tooltip {
 			position: absolute;
-			top: 100%;
-			right: 100%;
+			top: 40px;
+			right: 0px;
 			min-width: 130px;
 			background: white;
 			display: flex;
@@ -58,6 +58,44 @@
 			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 			gap: 1em;
 			justify-content: center;
+		}
+		.customize-change-tooltip {
+			min-width: 340px;
+
+			&-child-1 {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				box-icon {
+					width: 19px;
+					rotate: 270deg;
+				}
+			}
+			&-child-2 {
+				margin-top: 1.5em;
+				&-row-1 {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.row-1-tooltip {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 0.6em;
+						flex-direction: column;
+						.title {
+							color: #6f6b7d;
+							font-weight: 600;
+						}
+						.title-sub {
+							font-size: 0.9rem;
+							color: #b0aeb8;
+						}
+					}
+				}
+			}
 		}
 		box-icon {
 			width: 30px;
@@ -84,13 +122,19 @@
 		}
 
 		.right {
-			gap: 0.3em;
+			gap: 1em;
 
 			.right-img-profile {
 				height: 30px;
 				object-fit: contain;
 				max-width: 40px;
 				cursor: pointer;
+			}
+			box-icon {
+				width: 23px;
+			}
+			.bell-icon {
+				width: 30px;
 			}
 		}
 	}
