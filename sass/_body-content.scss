@@ -61,11 +61,13 @@
 		}
 		.customize-change-tooltip {
 			min-width: 340px;
-
+			padding: 0;
+			gap: 0;
 			&-child-1 {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				padding: 1.3em 1.3em 0.3em 1.3em;
 
 				box-icon {
 					width: 19px;
@@ -74,10 +76,13 @@
 			}
 			&-child-2 {
 				margin-top: 1.5em;
+				border-top: 1px solid #dbdade;
+
 				&-row-1 {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					padding: 1.6em;
 
 					.row-1-tooltip {
 						display: flex;
@@ -134,7 +139,74 @@
 				width: 23px;
 			}
 			.bell-icon {
-				width: 30px;
+				width: 25px;
+			}
+		}
+
+		.notification-tooltip {
+			margin: 0;
+			padding: 0;
+			min-width: 340px;
+			gap: 0;
+			height: 380px;
+			overflow-y: scroll;
+			&-header {
+				display: flex;
+				justify-content: space-between;
+				padding: 1.3em 1.3em 0.8em 1.3em;
+
+				align-items: center;
+				h4 {
+					font-weight: 600;
+				}
+			}
+			&-notis {
+				height: 340px;
+
+				&-1 {
+					display: grid;
+
+					grid-template-columns: 50px 1fr;
+					padding: 1em;
+
+					border-top: 1px solid #dbdade;
+
+					&:hover {
+						background: #00000013;
+						cursor: pointer;
+					}
+
+					img {
+						width: 40px;
+						border-radius: 50px;
+					}
+
+					&-content {
+						display: grid;
+						row-gap: 0.2em;
+
+						.head {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							span:last-child {
+								width: 10px;
+								height: 10px;
+								background-color: #7367f0;
+								display: block;
+								border-radius: 50px;
+								margin-right: 0.45em;
+							}
+						}
+						.footer {
+							@extend .head;
+						}
+						.time {
+							font-size: 0.8rem;
+							color: #827e8e;
+						}
+					}
+				}
 			}
 		}
 	}
