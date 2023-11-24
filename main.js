@@ -50,9 +50,10 @@ $(document).ready(() => {
       })
       windowClick(clickItem, displayOne)
 
-      $(close).click(() => {
+      $(close).click((e) => {
          $(displayOne).show();
          $(".parent").remove()
+         e.stopPropagation()
       })
 
    }
