@@ -111,6 +111,9 @@
 			padding: 0.3em 0.8em;
 			font-size: 0.8rem;
 		}
+		.right .invoice-items{
+			background: #ea5455;
+		}
 	}
 }
 .ps__thumb-y {
@@ -124,4 +127,9 @@
 }
 .icon-rotate {
 	rotate: 90deg;
+}
+.flex{
+	display: flex;
+	gap: .3em;
+	align-items: center;
 }

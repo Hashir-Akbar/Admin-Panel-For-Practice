@@ -138,9 +138,6 @@
 			box-icon {
 				width: 23px;
 			}
-			.bell-icon {
-				width: 25px;
-			}
 		}
 
 		.notification-tooltip {
@@ -444,4 +441,7 @@
 			}
 		}
 	}
+}
+.remove {
+	display: none !important;
 }
